@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
+    <script src="scriptGoldJohn.js"></script>
+</head>
+    <body bgcolor="lightblue">
+        <!-- Set up page -->
+        <div id="start">
+            <!-- <form action=""> -->
+            <!-- </form> -->
+            <button id="play" type="button" onclick="getElementById('start').style.visibility = 'hidden'">Click to play</button>
+            <!-- <button id="play" type="button" onlick></button> -->
+            <iframe src="office.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+            </iframe> 
+            <form action="">
+                <label for="P1" class="Player1">Player 1:</label>
+                <input id="P1"type="text" class="Player1" placeholder="Enter name player 1">
+                <label id="label2" for="P2" class="Player2">Player 2:</label>
+                <input id="P2"type="text" class="Player2" placeholder="Enter name player 2">
+            </form>
+            <div id="rules"><p id="title"><u>Game rules </u></p>
+                <ul id="howtoplay">
+                <li> Make your way around icy Scranton by <br> moving up,down, left and right</li>
+                <li> Choose from 4 weapons</li>
+                <li> When you reach your opponent Fight or defend</li>
+                <br>
+                <br>
+                <li class="imagetext" id="imagetext1">20pts</li>
+                <li class="imagetext">25pts</li>
+                <li class="imagetext 3">30pts</li>
+                <li class="imagetext 4">40pts</li>
+                </ul>
+                <!-- <p id="points">20pts   25pts   40pts   30pts</p> -->
+                <img class="pics" src="snowball.png" alt="picofsnowballs">
+                <img class="pics" src="gun.png" alt="">
+                <img class="pics" src="nunchucks.png" alt="picofnunchucks">
+                <img class="pics" src="ninjastar.png" alt="">
+            </div>
+            
+        </div>
+
+
+
+
+
+        <center>
+            <audio id="pop">
+                <source src="Jimwins.mp3" type="audio/mp3">
+            </audio>
+            <audio id="pop1">
+                <source src="Dwightwins.mp3" type="audio/mp3">
+            </audio>
+            <h1>The Office Game!</h1>
+        </center>
+        <CENTER>
+            <div id=TBL></div>
+        </CENTER>
+        <img id="battlebackground" src="battle.jpg">
+        <div id="leftDashboard">
+            <h2 id="showGoJ">Player 1</h2>
+            <img class="pic" src="jim.png" alt="">
+            <h2 id="Name1">Name:</h2>
+            <h2 id="JimHealth">Health: </h2>
+            <h2 id="weaponJimName">Current weapon:</h2>
+            <img id="weaponJim">
+            <button type="button" id="JimAt">Attack</button>
+            <button type="button" id="JimDefend">Defend</button>        
+        </div> 
+        <div id="rightDashboard">
+            <h2 id="showGoD">Player 2</h2>
+            <img class="pic" src="Dwight.png" alt="">
+            <h2 id="Name2">Name:</h2>
+            <h2 id="DwightHealth">Health: </h2>
+            <h2 id="weaponDwightName">Current weapon:</h2>
+            <img id="weaponDwight">
+            <button type="button" id="DwightAt">Attack</button>
+            <button type="button" id="DwightDefend">Defend</button>
+        </div> 
+        <div id="gameover">
+            <img id="jimhaswon" src="Jim.png" alt="">
+            <p class="gameoverp">Game Over</p>
+            <p class="gameoverp" id="Winner">Player:</p>
+            <img id="Dwighthaswon" src="Dwight.png" alt="">
+            <button type="button" id="playagain" onClick="window.location.reload();">Play again</button>
+        </div>
+    </body>
+</html>
