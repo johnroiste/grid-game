@@ -231,6 +231,7 @@ tbody {
     height: 100px;
     width: 120px;
     border: 2px solid #add8e6;
+    border-radius: 25%;
 }
 
 #JimAt, #DwightAt{
