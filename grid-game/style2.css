@@ -173,7 +173,7 @@ tbody {
     background-size: 85%, 100%;
     padding: none;
     background-repeat: no-repeat;
-    z-index: 100;
+/*     z-index: 100; */
     /* position: fixed; */
 }
 
